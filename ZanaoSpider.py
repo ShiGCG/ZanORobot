@@ -35,7 +35,7 @@ def get_headers():
         'Accept': 'application/json, text/plain, */*',
         'Host': 'c.zanao.com',
         "X-Sc-Platform": 'android',
-        'X-Sc-Alias': 'whut',
+        'X-Sc-Alias': 'xxx',
         'Sec-Fetch-Mode': 'cors',
         'Sec-Fetch-Dest': 'empty',
         'Sec-Fetch-Site': 'same-origin',
