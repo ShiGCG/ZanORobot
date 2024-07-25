@@ -1,5 +1,5 @@
 # ZanORobot
-将自己的赞噢校园集市帖子回复接入GPT
+将自己的赞噢校园集市帖子回复接入GPT（伪记忆性对话）
 # Requirements
 > openai
 > 
@@ -29,10 +29,11 @@ cookie的结构（值已经做了混淆）：
 - --------分割线--------
 - **Hm_lpvt_44d055a19f3943caa808501f424e662e**的值为当前时间的时间戳（单位秒）。
 - **Hm_lvt_44d055a19f3943caa808501f424e662e**的值为四个时间戳，其最后一个时间戳应当与**SERVERID**中最后一个时间戳相同。
-- --------分割线--------
-- 上面的当做介绍吧，下面是怎么用。
-- 抓取一次cookie后，每次发起请求时将当前的时间戳赋值给**Hm_lpvt_44d055a19f3943caa808501f424e662e**即可。
+上面的当做介绍吧，下面是怎么用。
 
-  修改**Robt**中**YOUR_API_KEY**和**Spider**中**cookies**即可。
+抓取一次cookie后，每次发起请求时将当前的时间戳赋值给**Hm_lpvt_44d055a19f3943caa808501f424e662e**即可。
 
-  **Spider**中**get_comment_list**方法需要接收帖子的id。
+修改**Robt**中**YOUR_API_KEY**和**Spider**中**cookies**即可。
+
+**Spider**中**get_comment_list**方法需要接收帖子的id。
+
