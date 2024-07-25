@@ -37,3 +37,4 @@ cookie的结构（值已经做了混淆）：
 
 **Spider**中**get_comment_list**方法需要接收帖子的id。
 
+**Spider**中**get_headers**方法需要修改**X-Sc-Alias**的值，应当为你的学校英文缩写，具体看抓包内容。
