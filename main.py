@@ -68,7 +68,7 @@ while True:
             history = ZanaoSpider.get_comment_list_str(
                 rcid=msg.reply_comment_id)
             question = (f'这是之前的对话：\n{history}\n这是新的回复:
-                        {msg.reply_comment_id}:{msg.content}\n请你做简短的回复')
+                        {msg.reply_user_nickname}:{msg.content}\n请你做简短的回复')
             reply = ZanaoRobot.ask(question=question)
             # reply = "测试 {}".format(time.time())
             r = ZanaoSpider.post_reply(
